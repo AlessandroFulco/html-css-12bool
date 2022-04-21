@@ -4,3 +4,13 @@
     background-color: red;
     border: 3px solid black;
 }
+
+.nested {
+    padding: 20px;
+}
+
+.nested .row .col-2,
+.nested .row .col-8,
+.nested .row .col-6 {
+    background-color: green;
+}
