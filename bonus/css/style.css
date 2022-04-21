@@ -1,0 +1,36 @@
+[class*="col-"] {
+    /* debug */
+    min-height: 100px;
+    background-color: violet;
+    border: 1px solid #fff;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+.row {
+    display:  flex;
+}
+.row.start [class*="col-"], .row.center [class*="col-"], .row.end [class*="col-"] {
+    min-height: 50px;
+}
+.row.start{
+    justify-content: start;
+}
+.row.center {
+    justify-content: center;
+}
+.row.end {
+    justify-content: end;
+}
+
+.row.nested .col-7,
+.row.nested .col-5 {
+    padding: 20px;
+}
+.row.nested .row .col-3,
+.row.nested .row .col-6 {
+    background-color: green;
+    border: 1px solid violet;
+}
+
